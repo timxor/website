@@ -5,6 +5,10 @@ import react.dom.*
 import logo.*
 import ticker.*
 
+
+@JsModule("src/contrib/propaganda.png")
+external val sme: dynamic
+
 class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         div("App-header") {
@@ -22,8 +26,16 @@ class App : RComponent<RProps, RState>() {
             ticker()
         }
         div("App-contrib") {
-            h2 {
-                +"open source contributors"
+            h1 {
+                +"open source contributions"
+            }
+            div {
+
+                a(href = "https://github.com/tschess") {
+                    img(src = sme){}
+                }
+
+
             }
         }
     }
