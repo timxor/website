@@ -9,7 +9,11 @@ import ticker.*
 @JsModule("src/contrib/propaganda.png")
 external val sme: dynamic
 
+
+
 class App : RComponent<RProps, RState>() {
+
+
     override fun RBuilder.render() {
         div("App-header") {
             logo()
@@ -17,18 +21,15 @@ class App : RComponent<RProps, RState>() {
                 +"tschess"
             }
         }
-        p("App-intro") {
-//            +"To get started, edit "
-//            code { +"app/App.kt" }
-//            +" and save to reload."
-            img {
+        p("App-ticker") {
+            iframe {
                 attrs {
-                    src = "https://www.youtube.com/watch?v=CtEyGuC_LCs"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/CtEyGuC_LCs"
+
                 }
             }
-        }
-        p("App-ticker") {
-            ticker()
         }
         div("App-contrib") {
             h1 {
@@ -46,4 +47,7 @@ class App : RComponent<RProps, RState>() {
     }
 }
 
+
+
 fun RBuilder.app() = child(App::class) {}
+
