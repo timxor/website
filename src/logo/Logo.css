@@ -11,10 +11,10 @@
 .Logo-kotlin {
   opacity: 0;
   animation: Logo-spin infinite 10s 5s linear;
-  height: 72%;
+  height: 100%;
   position: absolute;
-  top: 14%;
-  right: 24%;
+  top: 0%;
+  right: 0%;
 }
 
 @keyframes Logo-spin {
