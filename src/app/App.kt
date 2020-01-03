@@ -10,7 +10,6 @@ import ticker.*
 external val sme: dynamic
 
 
-
 class App : RComponent<RProps, RState>() {
 
 
@@ -21,7 +20,16 @@ class App : RComponent<RProps, RState>() {
                 +"tschess"
             }
         }
-        p("App-ticker") {
+        div("App-store") {
+
+            a(href = "https://apps.apple.com/us/app/tschess/id1477912988") {
+                img(src = "https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg"){}
+            }
+
+
+        }
+
+        div("App-ticker") {
             iframe {
                 attrs {
                     width="560"
@@ -31,10 +39,9 @@ class App : RComponent<RProps, RState>() {
                 }
             }
         }
+
         div("App-contrib") {
-            h1 {
-                +"open source contributions"
-            }
+            
             div {
 
                 a(href = "https://github.com/tschess") {
@@ -44,8 +51,15 @@ class App : RComponent<RProps, RState>() {
 
             }
         }
+
+
+
+
+
     }
+
 }
+
 
 
 

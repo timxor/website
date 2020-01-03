@@ -10,20 +10,24 @@ body {
 
 }
 
-
+.App-store {
+ padding: 40px;
+}
 
 .App-contrib {
-  background-color: #000;
-  color: white;
-  padding: 20px;
+
+  padding: 40px;
 }
 
 
 .App-intro {
+padding: 40px;
   font-size: large;
 }
 
 .App-ticker {
+padding: 40px;
+ background-color: #000;
   font-size: medium;
 }
 
