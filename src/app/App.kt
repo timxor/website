@@ -41,7 +41,7 @@ class App : RComponent<RProps, RState>() {
         }
 
         div("App-contrib") {
-            
+
             div {
 
                 a(href = "https://github.com/tschess") {
