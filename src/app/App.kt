@@ -9,7 +9,7 @@ class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         div("App-header") {
             logo()
-            h2 {
+            h1 {
                 +"tschess"
             }
         }
@@ -20,6 +20,11 @@ class App : RComponent<RProps, RState>() {
         }
         p("App-ticker") {
             ticker()
+        }
+        div("App-contrib") {
+            h2 {
+                +"open source contributors"
+            }
         }
     }
 }
