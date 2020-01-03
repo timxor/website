@@ -18,9 +18,14 @@ class App : RComponent<RProps, RState>() {
             }
         }
         p("App-intro") {
-            +"To get started, edit "
-            code { +"app/App.kt" }
-            +" and save to reload."
+//            +"To get started, edit "
+//            code { +"app/App.kt" }
+//            +" and save to reload."
+            img {
+                attrs {
+                    src = "https://www.youtube.com/watch?v=CtEyGuC_LCs"
+                }
+            }
         }
         p("App-ticker") {
             ticker()
