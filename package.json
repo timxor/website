@@ -17,7 +17,7 @@
     "react-scripts-kotlin": "4.0.2"
   },
   "scripts": {
-    "start": "set HTTPS = true && react-scripts-kotlin start",
+    "start": "react-scripts-kotlin start",
     "build": "react-scripts-kotlin build",
     "eject": "react-scripts-kotlin eject",
     "gen-idea-libs": "react-scripts-kotlin gen-idea-libs",
